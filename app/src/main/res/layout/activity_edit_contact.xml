@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditContact">
+
+    <ImageView
+        android:id="@+id/imEdit"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ace"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+
+    <TextView
+        android:layout_below="@+id/imEdit"
+        android:hint="Name"
+        android:layout_marginLeft="20dp"
+        android:textSize="30dp"
+        android:gravity="center_vertical"
+        android:id="@+id/tvEditName"
+        android:layout_width="match_parent"
+        android:layout_height="70dp" />
+
+    <TextView
+        android:layout_below="@+id/tvEditName"
+        android:layout_marginLeft="20dp"
+        android:hint="Number"
+        android:textSize="30dp"
+        android:gravity="center_vertical"
+        android:id="@+id/tvEditPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="70dp" />
+
+    <RelativeLayout
+        android:layout_margin="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/btnEdit"
+        android:background="@drawable/buton"
+        android:layout_width="50dp"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:layout_margin="12dp"
+            android:src="@drawable/ic_edit_black_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</RelativeLayout>
